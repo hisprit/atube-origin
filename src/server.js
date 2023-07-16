@@ -12,9 +12,9 @@ const logger = morgan("combined");
 app.use(logger);
 
 app.use('/', globalRouter);
-app.use('/user', userRouter);
-app.use('/video', videoRouter);
+app.use('/users', userRouter);
+app.use('/videos', videoRouter);
 
 app.listen(port, () => {
-    console.log(`Example app listening on port ${port} + 3000!`);
+    console.log(`Example app listening on port ${port}`);
 })
